@@ -50,7 +50,7 @@ try:
         elif char == curses.KEY_DOWN:
             move = myGame.moveDown()
         if move:
-            refreshPos(myGame,startPos)
+            #refreshPos(myGame,startPos)
             refreshPos(myGame,myGame.pos)
             if myGame.pos.x == (myGame.size.x) - 1 and myGame.pos.y == (myGame.size.y) - 1: 
                 time.sleep(0.5)  
