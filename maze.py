@@ -11,7 +11,7 @@ class MyPair:
         """Override the default Unequal behavior"""
         return not self.__eq__(other)
 
-from random import shuffle, randrange
+from random import shuffle
 
 def validNeighbour(pos, mazeSize):
     return pos.x >= 0 and pos.x < mazeSize.x and pos.y >= 0 and pos.y < mazeSize.y
